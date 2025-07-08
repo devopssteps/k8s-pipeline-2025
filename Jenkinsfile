@@ -18,9 +18,12 @@ pipeline {
                 sh 'docker build -t $DOCKER_IMAGE:IMAGE_TAG .'
             }
         }
-        stage('Test') {
+        stage('docker login and image push') {
             steps {
-               sh 'echo test stage'
+               sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+                //sh 'docker push $DOCKER_IMAGE:$BUILD_NUMBER'
+               sh 'docker push $DOCKER_IMAGE:$IMAGE_TAG'
+
             }
         }
         stage('Deploy') {
