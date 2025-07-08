@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE = 'devopssteps/laravel-app'
         K8S_NAMESPACE = 'default'
         DOCKERHUB_CREDENTIALS = credentials('docker-hub-credential')
-        //IMAGE_NAME = 'devopssteps/laravel-app'
+        ///IMAGE_NAME = 'devopssteps/laravel-app'
         IMAGE_TAG = 'latest'
         KUBE_DEPLOYMENT_NAME = 'laravel-app'
         APP_LABEL = 'laravel'
