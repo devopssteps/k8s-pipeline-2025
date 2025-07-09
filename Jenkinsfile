@@ -27,7 +27,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo deploy stage'
+                sh '.k8s/deploy.sh'
+                sh 'kubectl rollout restart deployment.apps/$KUBE_DEPLOYMENT_NAME'
             }
         }
     }
