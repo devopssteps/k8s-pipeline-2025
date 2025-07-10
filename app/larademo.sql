@@ -153,7 +153,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'rajiv siddiqui','rajivsiddiqui6@gmail.com',NULL,'$2y$12$K69cQ8wOGUGpDPsbL1fEG.uamzQfJJKbDxAf7dB85/AMeAqateP6u',NULL,'2025-06-24 17:21:12','2025-06-24 17:21:12'),(2,'rajiv siddiqui','rajivsiddiqui9@gmail.com',NULL,'$2y$12$lvMmX4w5Q/MFQb.XZjEIvuSMyYG1GvgskxxBdStwCsKktko69903S',NULL,'2025-06-28 07:55:27','2025-06-28 07:55:27');
+INSERT INTO `users` VALUES (1,'dhaka ','dhaka@gmail.com',NULL,'$2y$12$K69cQ8wOGUGpDPsbL1fEG.uamzQfJJKbDxAf7dB85/AMeAqateP6u',NULL,'2025-06-24 17:21:12','2025-06-24 17:21:12'),(2,'rajiv siddiqui','rajivsiddiqui9@gmail.com',NULL,'$2y$12$lvMmX4w5Q/MFQb.XZjEIvuSMyYG1GvgskxxBdStwCsKktko69903S',NULL,'2025-06-28 07:55:27','2025-06-28 07:55:27');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
