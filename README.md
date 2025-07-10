@@ -1,1 +1,1 @@
-# k8s-pipeline-2025
+# Deploy Laravel website to kubernets unsing jenkins CICD pipeline
